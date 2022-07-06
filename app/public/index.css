@@ -3998,8 +3998,17 @@ textarea.form-control.is-invalid {
   border-radius: 0.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-none {
   border-style: none;
+}
+
+.border-indigo-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -4014,6 +4023,16 @@ textarea.form-control.is-invalid {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-left {
@@ -4060,6 +4079,7 @@ textarea.form-control.is-invalid {
 
 .button {
   display: flex;
+  align-content: center;
   align-items: center;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
@@ -4166,11 +4186,9 @@ textarea.form-control.is-invalid {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .list_button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  background-color: rgb(255 237 213 / var(--tw-bg-opacity));
 }

@@ -1,5 +1,6 @@
 <script>
 import Button from "./Button.svelte";
+
 </script>
 
 <main>
@@ -7,9 +8,5 @@ import Button from "./Button.svelte";
         <div class="dropdown relative">
             <Button/>
         </div>
-    </div>    
+    </div>
 </main>
-
-<style>
-    
-</style>

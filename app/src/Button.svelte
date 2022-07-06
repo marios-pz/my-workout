@@ -12,8 +12,9 @@
         { "name": "Sunday", "id": 7},
     ];
 
-    let data = [];
     let day_status = [];
+
+    let exercises = [];
 
 	const GetPlan = (index) => {
 
@@ -28,7 +29,7 @@
                 data = "Break";
             }
 
-            console.log(data);
+            exercises = data;
         })
         .catch(err => {
             console.log(err);
@@ -73,14 +74,38 @@
         {/each}
     </ul>
 
-    <p>Weekly workout plan</p>
-    
-    <p> {data} </p>
+    {#if exercises == "Break"}
+        <p>Break</p>
+    {:else}
+        {#each exercises as exercise}      
+            <h2> {exercise.name} {exercise.quantity} </h2>
+        {/each}
+    {/if}
 
 </main>
 
 <style>
-    p, h1 { color:white; }
+    .workout {
+        margin: 0;
+        top: 100px;
+        width: 100%;
+        position: static;
+    }
+
+    .workout h2 {
+        margin-top: 20px;
+    }
+
+    p, h1, h2 { 
+        color: #ff3e00;
+        position: relative;
+        text-shadow: black 0.1em 0.1em 0.2em
+    }
+
+    h2 {
+        font-size: 2em;
+        
+    }
 
     h1 {
         margin-top: 1em;
@@ -89,7 +114,6 @@
 
     p {
         margin-top: 2em;
-        color: #ff3e00;
 		text-transform: uppercase;
         font-weight: 100;
         font-size: 3em;

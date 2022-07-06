@@ -1,8 +1,5 @@
 <script>
 	import Bar from "./Bar.svelte";
-
-	import day_status from "./Button.svelte";
-
 </script>
 
 <main>
@@ -24,6 +21,7 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+		text-shadow: black 0.1em 0.1em 0.2em;
 	}
 
 	@media (min-width: 640px) {
