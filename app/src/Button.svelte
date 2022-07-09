@@ -11,13 +11,13 @@
         { "name": "Sunday", "id": 7},
     ];
 
-    let day_status = [];
+    let day_status = "";
 
     let exercises = [];
 
 	const GetPlan = (index) => {
 
-        day_status = [days[index - 1].name];
+        day_status = days[index - 1].name;
 
 		fetch('http://0.0.0.0:8080/api/workout/' + index)
         .then(response => response.json())
@@ -71,13 +71,17 @@
         {/each}
     </ul>
 
-    {#if exercises == "Break"}
+    <h2> {day_status} </h2>
+    <div class="backdrop-opacity-10 backdrop-invert bg-black/30 rounded-lg">
+        {#if exercises == "Break"}
         <p>Break</p>
-    {:else}
-        {#each exercises as exercise}      
-            <h2> {exercise.name} {exercise.quantity} </h2>
-        {/each}
-    {/if}
+        {:else}
+            {#each exercises as exercise}      
+                <h2> {exercise.name} <br> {exercise.quantity} </h2>
+            {/each}
+        {/if}
+    </div>
+    
 
 </main>
 
@@ -91,7 +95,7 @@
 
     h2 {
         font-size: 2em;
-        
+        margin-top: 1em;
     }
 
 
