@@ -21,5 +21,10 @@ A workout routine for full body strength.
 - `docker pull mongodb:5.0` (hostname must be named bibi, else use my compose are reference)
 - `docker pull mariospapaz/api-workout:1.0`
 - `docker pull mariospapaz/my-workout:1.0`
-I highly suggest you to take my `docker-compose.yaml` instead, running all of these seperaly is a nuisance.
+I highly suggest you to take my 
+<a href="https://github.com/mariospapaz/my-workout/blob/main/visitors.yaml"> 
+    Visitors yaml
+</a>
+instead, running all of these seperaly is a nuisance.
+
 This is my first svelte project, if the webapp image seems not minimal to you. blame node-modules and my lack of experience :')
