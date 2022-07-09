@@ -1,6 +1,4 @@
-<script>
-	import Bar from "./Bar.svelte";
-</script>
+<script> import Bar from "./Bar.svelte"; </script>
 
 <main>
 	<h1>My Workout</h1>

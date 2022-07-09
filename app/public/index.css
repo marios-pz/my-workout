@@ -3908,6 +3908,10 @@ textarea.form-control.is-invalid {
   margin-top: 0.25rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3932,6 +3936,10 @@ textarea.form-control.is-invalid {
   height: 100%;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -3940,10 +3948,6 @@ textarea.form-control.is-invalid {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-}
-
-.max-w-sm {
-  max-width: 24rem;
 }
 
 .transform {
@@ -3986,16 +3990,8 @@ textarea.form-control.is-invalid {
   justify-content: space-evenly;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .border-none {
@@ -4005,20 +4001,6 @@ textarea.form-control.is-invalid {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-black\/30 {
@@ -4045,14 +4027,6 @@ textarea.form-control.is-invalid {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.opacity-25 {
-  opacity: 0.25;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .shadow-lg {
