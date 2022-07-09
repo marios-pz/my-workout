@@ -12,7 +12,7 @@ A workout routine for full body strength.
 - Kubernetes
 - Docker
 - MongoDB
-- Microsoft Azure
+- Microsoft Azure Kubernetes
 
 
 ## Disclaimer: 
