@@ -1,9 +1,9 @@
-## my-workout
+# my-workout
 A workout routine for full body strength. 
 
 ## Showcase
 
-# Disclaimer: 
+## Disclaimer: 
   I precisely searched for uncopyrighted images, if the image below is copyrighted. 
   Not my problem! ;) its not gonna be used for commercial purposes anyway) 
 
