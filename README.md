@@ -14,5 +14,5 @@ A workout routine for full body strength.
 
 
 ## Disclaimer: 
-- I precisely searched for uncopyrighted images, if the image below is copyrighted. 
+- I precisely searched for uncopyrighted images, if the backround image is copyrighted. 
   Not my problem! ;) its not gonna be used for commercial purposes.
