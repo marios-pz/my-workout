@@ -6,7 +6,7 @@ A workout routine for full body strength.
 
 ## Tools used
 - Svelte
-- Go
+- Go <https://github.com/mariospapaz/my-workout-api>
 - Kubernetes
 - Docker
 - MongoDB
