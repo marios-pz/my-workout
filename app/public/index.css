@@ -3900,6 +3900,10 @@ textarea.form-control.is-invalid {
   z-index: 50;
 }
 
+.float-right {
+  float: right;
+}
+
 .float-left {
   float: left;
 }
@@ -3972,6 +3976,10 @@ textarea.form-control.is-invalid {
 
 .flex-col {
   flex-direction: column;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-center {

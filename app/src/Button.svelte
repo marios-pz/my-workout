@@ -1,6 +1,5 @@
 <script>
     import { each } from "svelte/internal";
-    import Point from "./Point.svelte";
 
     let days = [
         { "name": "Monday", "id": 1},
@@ -41,8 +40,8 @@
 </script>
 
 <main>
-    <button class="button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
-        Choose day <Point /> 
+    <button style="display:inline;" class="button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+        Choose day  
     </button>
 
     <ul
@@ -54,14 +53,12 @@
         bg-white
         text-base
         z-50
-        float-left
         py-2
         list-none
         text-left
         rounded-lg
         shadow-lg
         mt-1
-        hidden
         m-0
         bg-clip-padding
         border-none
@@ -70,7 +67,7 @@
     >
 
         {#each days as day (day.id)}
-            <a class="list_button" href="#" on:click="{ () => GetPlan(day.id) }">{ day.name }</a>
+            <a class="list_button" href="#body" on:click="{ () => GetPlan(day.id) }">{ day.name }</a>
         {/each}
     </ul>
 
@@ -85,18 +82,8 @@
 </main>
 
 <style>
-    .workout {
-        margin: 0;
-        top: 100px;
-        width: 100%;
-        position: static;
-    }
 
-    .workout h2 {
-        margin-top: 20px;
-    }
-
-    p, h1, h2 { 
+    p, h2 { 
         color: #ff3e00;
         position: relative;
         text-shadow: black 0.1em 0.1em 0.2em
@@ -107,10 +94,6 @@
         
     }
 
-    h1 {
-        margin-top: 1em;
-        font-size: 3em;
-    }
 
     p {
         margin-top: 2em;
