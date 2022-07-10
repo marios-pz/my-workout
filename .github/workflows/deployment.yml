@@ -1,0 +1,33 @@
+name: Azure Deployment
+
+env:
+  resourceGroup: 'group-workout'
+  kubernetesVersion: '1.22.6'
+  name: 'my-workout-cluster'
+  
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Azure Login
+        uses: Azure/login@v1.4.5
+        with:
+          # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+      - name: Azure CLI Action
+        uses: Azure/cli@v1
+        with:
+          inlineScript: az aks create -g ${{ env.resourceGroup }} -n ${{ env.name }} --kubernetes-version ${{ env.kubernetesVersion }} --generate--ssh-keys
+          
