@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kompose.cmd: kompose -f docker-compose.yaml convert
+    kompose.version: 1.26.1 (HEAD)
+  creationTimestamp: null
+  labels:
+    io.kompose.network/my-workout: "true"
+    io.kompose.service: my-workout-api
+  name: my-workout-api
+spec:
+  containers:
+    - image: mariospapaz/api-workout:1.0
+      name: my-workout-api
+      ports:
+        - containerPort: 8080
+      resources: {}
+  hostname: api
+  restartPolicy: OnFailure
+status: {}
