@@ -51,8 +51,8 @@ jobs:
         uses: Azure/k8s-deploy@v4
         with:
           manifests:
-              .github/kube_deployment.yml
-              .github/service.yml
+              ./.github/kube_deployment.yml
+              
               
           images: |
             'mariospapaz/my-workout:1.0'
