@@ -25,10 +25,13 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
               
-      - name: Azure CLI Action
-        uses: Azure/cli@v1
+      - name: Kubernetes Set Context
+        uses: Azure/aks-set-context@v3
         with:
-          inlineScript: az aks create -g ${{ env.resourceGroup }} -n ${{ env.name }} --kubernetes-version ${{ env.kubernetesVersion }} --generate-ssh-keys --node-count 1
+          creds: '${{ secrets.AZURE_CREDENTIALS }}'
+          resource-group: test
+          cluster-name: my-workout-cluster
+          
       
       - name: Create secret in Kubernetes cluster
         uses: Azure/k8s-create-secret@v3.0
