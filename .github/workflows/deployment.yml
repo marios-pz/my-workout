@@ -32,7 +32,7 @@ jobs:
       - name: Kubernetes Set Context
         uses: Azure/aks-set-context@v3
         with:
-          resource-group: my-workout-resource
+          resource-group: test
           cluster-name: my-workout-cluster
         
       - name: Deploy to Kubernetes cluster
