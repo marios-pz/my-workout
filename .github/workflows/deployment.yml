@@ -28,9 +28,6 @@ jobs:
         uses: Azure/login@v1.4.5
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          
-      - name: Initiaze Docker env
-        run: eval $(minikube docker-env)
               
       - name: Kubernetes Set Context
         uses: Azure/aks-set-context@v3
