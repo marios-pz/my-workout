@@ -7,18 +7,15 @@ metadata:
   creationTimestamp: null
   labels:
     io.kompose.network/my-workout: "true"
-    io.kompose.service: mongo
-  name: mongo
+    io.kompose.service: my-workout
+  name: my-workout
 spec:
   containers:
-    - env:
-        - name: MONGO_INITDB_ROOT_PASSWORD
-          value: example
-        - name: MONGO_INITDB_ROOT_USERNAME
-          value: root
-      image: mongo:5.0
-      name: bibi-mongo
+    - image: mariospapaz/my-workout:1.0
+      name: my-workout
+      ports:
+        - containerPort: 8080
       resources: {}
-  hostname: bibi
+  hostname: webapp
   restartPolicy: OnFailure
 status: {}
