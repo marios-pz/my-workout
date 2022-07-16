@@ -47,7 +47,9 @@ jobs:
               ./.github/mongo-pod.yaml
               ./.github/my-workout-api-pod.yaml
               ./.github/my-workout-api-service.yaml
-              ./.github/my-workout-networkpolicy.yaml        
+              ./.github/my-workout-networkpolicy.yaml
+              ./.github/my-workout-pod.yaml 
+              ./.github/my-workout-service.yaml
           
           imagepullsecrets: docker-image-pull-secret
           action: deploy
