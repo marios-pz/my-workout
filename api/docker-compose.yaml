@@ -1,0 +1,45 @@
+version: '3.1'
+networks:
+  my-workout-network:
+    external: false
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.24.2.0/16"
+
+services:
+
+  mongo:
+    image: mongo:5.0
+    hostname: bibi
+    container_name: bibi-mongo
+    restart: on-failure
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+
+    command: --quiet
+    
+    networks:
+      - my-workout-network
+    healthcheck:
+        test: ["CMD", "mongo"]
+        interval: 5s
+        timeout: 5s
+        retries: 2
+
+    
+  my-workout-api:
+    image: mariospapaz/my-workout:1.0
+    hostname: api 
+    container_name: my-workout-api
+    restart: on-failure
+    
+    networks:
+      - my-workout-network
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+    ports:
+      - 8080:8080

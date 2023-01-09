@@ -1,0 +1,140 @@
+[
+    {
+        "_id": "1",
+        "exercises": [
+            {
+                "name": "Push Ups",
+                "quantity": "4 sets of 12"
+            },
+            {
+                "name": "Weight Push Ups",
+                "quantity": "4 sets of 12-10-10-8"
+            },
+            {
+                "name": "Reverse Incline Push Ups",
+                "quantity": "4 sets of 10-8-6-6"
+            },
+            {
+                "name": "Diamond Push Ups",
+                "quantity": "4 sets of 12"
+            },
+            {
+                "name": "Dumbbell Incline Curls",
+                "quantity": "4 sets of 12-10-8-6"
+            },
+            {
+                "name": "Dumbbell Hammer Curls",
+                "quantity": "3 sets of 12-10-8"
+            },
+            {
+                "name": "Dumbbell Concentration Curls",
+                "quantity": "3 set of 12"
+            }
+        ]
+    },
+
+    {
+        "_id": "2",
+        "exercises": [
+            {
+                "name": "Explosive Squats",
+                "quantity": "4 sets of 15-12-10-8"
+            },
+            {
+                "name": "Front Dumbell Squat",
+                "quantity": "4 sets of 12-10-8-6"
+            },
+            {
+                "name": "Dumbell Lunges",
+                "quantity": "3 sets of 12-10-10"
+            },
+            {
+                "name": "Weight Bag Calf Raises",
+                "quantity": "4 sets of 12-10-8-6"
+            },
+            {
+                "name": "Dumbbell Step Ups",
+                "quantity": "4 set of 10"
+            },
+            {
+                "name": "Hip Abduction with Band",
+                "quantity": "4 sets of 15"
+            }
+        ]
+    },
+
+    {
+        "_id": "3",
+        "exercises": null
+    },
+
+    {
+        "_id": "4",
+        "exercises": [
+            {
+                "name": "Cable Pulldown",
+                "quantity": "4 sets of 12-10-10-8"
+            },
+            {
+                "name": "Dorsal Raise",
+                "quantity": "4 sets of 12-10-8-6"
+            },
+            {
+                "name": "Dumbbell Push Ups into a Row",
+                "quantity": "3 sets of 10-8-6"
+            },
+            {
+                "name": "Dumbbell Bird-Dog",
+                "quantity": "3 sets of 12-10-8"
+            },
+            {
+                "name": "Bridge",
+                "quantity": "3 sets of 10-8-8"
+            }
+        ]
+    },
+
+    {
+        "_id": "5",
+        "exercises": [
+            {
+                "name": "Smith Shoulder Press",
+                "quantity": "4 sets of 12-10-8-6"
+            },
+            {
+                "name": "Dumbbell Lateral Raise",
+                "quantity": "3 sets of 10"
+            },
+            {
+                "name": "Dumbbell Front Raise",
+                "quantity": "3 sets of 10"
+            },
+            {
+                "name": "Dumbbell Shrug",
+                "quantity": "3 sets of 12"
+            },
+            {
+                "name": "Cable Pushdown",
+                "quantity": "3 sets of 12-10-6"
+            },
+            {
+                "name": "Military Weight Push Ups",
+                "quantity": "3 sets of 10-8-6"
+            },
+            {
+                "name": "Dumbbell Triceps Extension",
+                "quantity": "3 sets of 12-10-8"
+            }
+        ]
+    },
+
+    {
+        "_id": "6",
+        "exercises": null
+    },
+
+    {
+        "_id": "7",
+        "exercises": null
+    }
+]
